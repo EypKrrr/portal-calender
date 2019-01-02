@@ -1,5 +1,5 @@
 {
-    "name": "kouosl/portal-Calender",
+    "name": "kouosl/portal-calender",
     "description": "Sample module for KOUOSL PORTAL",
     "type": "yii2-extension",
     "keywords": ["yii2", "yii 2", "Calender", "module", "modules"],
@@ -7,7 +7,7 @@
     "authors": [
         {
             "name": "Eyup KORURER",
-            "email": "eyup@gmail.com"
+            "email": "eyup.kouosl@gmail.com"
         }
     ],
     "autoload": {
