@@ -1,9 +1,9 @@
 <?php
-namespace kouosl\Calender\controllers\frontend;
+namespace kouosl\calender\controllers\frontend;
 
 
 /**
- * Default controller for the `Calender` module
+ * Default controller for the `calender` module
  */
 class DefaultController extends \kouosl\base\controllers\frontend\BaseController
 {

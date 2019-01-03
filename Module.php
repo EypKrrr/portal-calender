@@ -1,5 +1,5 @@
 <?php
-namespace kouosl\Calender;
+namespace kouosl\calender;
 
 use Yii;
 use yii\filters\auth\CompositeAuth;
@@ -10,7 +10,7 @@ use yii\web\HttpException;
 
 
 /**
- * Calender module definition class
+ * calender module definition class
  */
 class Module extends \kouosl\base\Module
 {
@@ -61,16 +61,16 @@ class Module extends \kouosl\base\Module
         Yii::$app->i18n->translations['site/*'] = [
             'class' => 'yii\i18n\PhpMessageSource',
             'sourceLanguage' => 'en-US',
-            'basePath' => '@kouosl/Calender/messages',
+            'basePath' => '@kouosl/calender/messages',
             'fileMap' => [
-                'Calender/Calender' => 'Calender.php',
+                'calender/calender' => 'calender.php',
             ],
         ];
     }
 
     public static function t($category, $message, $params = [], $language = null)
     {
-        return Yii::t('Calender/'. $category, $message, $params, $language);
+        return Yii::t('calender/'. $category, $message, $params, $language);
     }
 
     public static function initRules(){
@@ -79,7 +79,7 @@ class Module extends \kouosl\base\Module
             [
                 'class' => 'yii\rest\UrlRule',
                 'controller' => [
-                   'Calender/Calenders',
+                   'calender/calenders',
                 ],
                 'tokens' => [
                     '{id}' => '<id:\\w+>'
